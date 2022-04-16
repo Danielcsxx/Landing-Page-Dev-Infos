@@ -6,23 +6,27 @@
   gap: var(--gap);
   min-height: 100vh;
 }
+
 .intro-text-content,
 .introimg {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
 }
+
 .intro-text-content h2 {
   font-size: 5rem;
   margin-bottom: 5rem;
   text-transform: uppercase;
   line-height: 1.2;
 }
+
 .introimg img,
 .introimg svg {
   max-width: 100%;
   height: auto;
 }
+
 .materia-main {
   max-width: 70rem;
   display: flex;
@@ -32,33 +36,40 @@
   text-align: center;
   padding: var(--gap);
 }
+
 .materia-main h3 {
   margin-bottom: 3rem;
 }
+
 .top3-main {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   min-height: 100vh;
 }
+
 .top3-main h2 {
   margin-bottom: 3rem;
 }
+
 .top3-main p {
   margin-bottom: 15rem;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
   counter-reset: grid-counter;
 }
+
 .grid h3 {
   font-size: 3rem;
   position: relative;
   padding-left: 5rem;
   padding-bottom: 2rem;
 }
+
 .grid h3::before {
   counter-increment: grid-counter;
   content: counter(grid-counter);
@@ -69,29 +80,36 @@
   left: -2rem;
   transform: rotate(5deg);
 }
+
 .galeria-content {
   width: 100%;
   max-width: 36rem;
   max-height: 36rem;
   overflow: hidden;
 }
+
 .galeria-content img {
   transition: all 300ms ease-in-out;
 }
+
 .galeria-content img:hover {
   transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
+
 .galeria-title {
   font-style: italic;
   text-transform: capitalize;
 }
+
 .pcontent {
   font-style: italic;
   color: turquoise;
 }
+
 .contact-form {
   grid-column: span 2;
 }
+
 .contact-form .form-grid {
   border: none;
   display: flex;
@@ -99,18 +117,22 @@
   flex-wrap: wrap;
   gap: var(--gap);
 }
+
 .form-group {
   flex: 1 1 320px;
 }
+
 .form-grid legend {
   font-style: italic;
   font-size: 1.6rem;
   margin-bottom: 3rem;
 }
+
 .form-group label {
   display: block;
   margin-bottom: 1rem;
 }
+
 .form-group input,
 .form-group textarea {
   border: none;
@@ -120,10 +142,12 @@
   font-size: 3rem;
   outline: none;
 }
+
 .form-group input:focus,
 .form-group textarea:focus {
   box-shadow: 0 0 10px 2px var(--secundary-color);
 }
+
 .form-group button {
   border: 0.5rem solid var(--white-color);
   background: none;
@@ -133,29 +157,36 @@
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
+
 .form-group button:hover {
   background: var(--white-color);
   color: var(--primary-color);
 }
+
 .form-group ::placeholder {
   color: var(--gray-color);
   font-size: 2.5rem;
 }
+
 .tabela {
   overflow: hidden;
   overflow-x: auto;
 }
+
 .rodape ul {
   display: flex;
   list-style: none;
 }
+
 .rodape h1 {
   font-size: 2.3rem;
   color: var(--white-color);
 }
+
 .rodape h1 a {
   color: inherit;
 }
+
 .rodape ul li a {
   display: block;
   padding: 2rem;
@@ -163,6 +194,7 @@
   color: var(--white-color);
   position: relative;
 }
+
 .rodape ul li a::after {
   content: "";
   position: absolute;
@@ -173,13 +205,16 @@
   background: var(--secundary-color);
   transition: all 300ms ease-in-out;
 }
+
 .rodape ul li a:hover::after {
   width: 50%;
   left: 25%;
 }
+
 .close-menu {
   display: none;
 }
+
 .back-to-top {
   position: fixed;
   bottom: 2rem;
@@ -195,6 +230,7 @@
   transform: rotate(-90deg);
   border: 0.1rem solid var(--primary-color);
 }
+
 .footer {
   text-align: center;
   font-size: 1.6rem;
@@ -208,11 +244,23 @@
   color: var(--secundary-color);
 }
 
+.contact-Me {
+  margin-left: 0.32rem;
+  text-shadow: 1px 1px 1px rgb(1, 80, 170);
+}
+
+.contact-Me:hover {
+  color: rgb(8, 207, 233);
+  transition: all 300ms ease-in-out;
+}
+
 .footer p {
   margin: 0;
   padding: 3rem;
 }
+
 @media (max-width: 800px) {
+
   .intro-content,
   .grid {
     grid-template-columns: 1fr;
@@ -223,12 +271,15 @@
     max-width: 100%;
     max-height: 100%;
   }
+
   .galeria-content img {
     width: 100%;
   }
+
   .top3-main {
     display: block;
   }
+
   .menu {
     bottom: 0;
     text-align: center;
@@ -243,6 +294,7 @@
   .menucontent {
     height: 100vh;
   }
+
   .menu {
     display: none;
   }
@@ -263,11 +315,12 @@
     padding: 0.5rem;
     cursor: pointer;
   }
-  .close-menu:checked ~ .menu {
+
+  .close-menu:checked~.menu {
     display: block;
   }
 
-  .close-menu:checked ~ .close-menu-label::after {
+  .close-menu:checked~.close-menu-label::after {
     display: block;
     content: "✕";
     font-size: 3rem;
@@ -276,12 +329,15 @@
   h1 {
     font-size: 4rem;
   }
+
   h2 {
     font-size: 3.6rem;
   }
+
   h3 {
     font-size: 3.4rem;
   }
+
   h4 {
     font-size: 3.2rem;
   }
@@ -289,6 +345,7 @@
   h5 {
     font-size: 3rem;
   }
+
   h6 {
     font-size: 2.8rem;
   }

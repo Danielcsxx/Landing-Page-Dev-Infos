@@ -5,6 +5,7 @@
   padding-top: 0;
   padding-bottom: 0;
 }
+
 .menu {
   position: fixed;
   top: 0;
@@ -14,17 +15,21 @@
   z-index: 1;
   border-bottom: 0.1rem solid var(--gray-color);
 }
+
 .menu ul {
   list-style: none;
   display: flex;
 }
+
 .menu h1 {
   font-size: 2.3rem;
   color: var(--primary-color);
 }
+
 .menu h1 a {
   color: inherit;
 }
+
 .menu ul li a {
   display: block;
   padding: 2rem;
@@ -32,6 +37,7 @@
   color: var(--primary-color);
   position: relative;
 }
+
 .menu ul li a::after {
   content: "";
   position: absolute;
@@ -42,6 +48,7 @@
   background: var(--secundary-color);
   transition: all 300ms ease-in-out;
 }
+
 .menu ul li a:hover::after {
   width: 50%;
   left: 25%;
