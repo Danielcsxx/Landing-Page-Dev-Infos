@@ -110,6 +110,10 @@
   grid-column: span 2;
 }
 
+.form-title {
+  margin-bottom: 32px;
+}
+
 .contact-form .form-grid {
   border: none;
   display: flex;
@@ -141,6 +145,8 @@
   width: 100%;
   font-size: 3rem;
   outline: none;
+  resize: none;
+  border-radius: 6px;
 }
 
 .form-group input:focus,
@@ -156,6 +162,7 @@
   font-size: 2rem;
   cursor: pointer;
   transition: all 300ms ease-in-out;
+  border-radius: 6px;
 }
 
 .form-group button:hover {
@@ -217,16 +224,16 @@
 
 .back-to-top {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 4rem;
+  right: 4rem;
   background: var(--white-color);
   color: var(--primary-color);
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 10%;
   transform: rotate(-90deg);
   border: 0.1rem solid var(--primary-color);
 }
