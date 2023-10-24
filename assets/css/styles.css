@@ -115,6 +115,7 @@
 }
 
 .contact-form .form-grid {
+  margin-top: 32px;
   border: none;
   display: flex;
   flex-direction: row;
